@@ -14,4 +14,13 @@ window.addEventListener('load', function () {
         web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
     }
 
+
+    //Chiediamo l'abilitazione per l'esecuzione della funzione.
+    window.ethereum.enable(startApp())
+
+
 });
+
+//2. avvio l'applicazione (in questo caso vuota)
+var startApp = function () {};
+
